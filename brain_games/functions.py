@@ -33,3 +33,17 @@ def progression() -> list:
         progressions.append(progressions[i - 1] + step)
 
     return progressions 
+
+def prime(number: int) -> str:
+    check = 0
+    for i in range(2, number):
+        if number % i == 0:
+            check += 1
+    
+    if check == 0:
+        return 'yes'
+    else:
+        return 'no'
+    
+def is_even(number: int) -> bool:
+    return number % 2 == 0

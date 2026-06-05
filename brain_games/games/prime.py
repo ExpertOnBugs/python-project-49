@@ -1,22 +1,18 @@
 import random
 from brain_games.functions import greeting
-from brain_games.functions import is_even
+from brain_games.functions import prime
 
-def even_game():
-    print('Welcome to the Brain Games!')
-
-    name = greeting('What is the result of the expression?')
-
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def prime_game():
+    name = greeting('Answer "yes" if given number is prime. Otherwise answer "no".')
 
     correct_num = 0
 
     while correct_num < 3:
-        random_number = random.randint(1, 100)
+        number = random.randint(1, 151)
+        
+        correct_answer = prime(number)
 
-        print('Question:', random_number)
-
-        correct_answer = 'yes' if is_even(random_number) else 'no'
+        print(f"Question: {number}")
 
         answer = input('Your answer: ')
 
@@ -25,7 +21,7 @@ def even_game():
             correct_num += 1
         else:
             break
-        
+
     if correct_num == 3:
         print(f"Congratulations, {name}!")
     else:
