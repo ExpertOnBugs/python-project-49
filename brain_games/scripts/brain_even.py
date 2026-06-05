@@ -32,6 +32,7 @@ def game():
         print(f"Congratulations, {name}!")
     else:
         print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'")
+        print(f"Let's try again, {name}!")
 
 def main():
     game()
