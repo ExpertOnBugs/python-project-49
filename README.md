@@ -15,22 +15,62 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ExpertOnBugs_python-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=ExpertOnBugs_python-project-49)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=ExpertOnBugs_python-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=ExpertOnBugs_python-project-49)
 
-### brain-even
+# Brain Games
 
-asciinema: https://asciinema.org/a/Q7k41FJum6OkNz0i
+Проект с мини‑играми для тренировки устного счёта.
 
-### brain-calc
+## Минимальные требования
 
-asciinema: https://asciinema.org/a/4M4UhkRrLoD5VHNc
+- Python >= 3.12
+- uv
+- prompt >= 0.4.1
+- Доступ в интернет
 
-### brain-gcd
+## Установка
 
-asciinema: https://asciinema.org/a/RJjVwwUPTZjGOkAq
+1. Клонируйте репозиторий:
+   git clone https://github.com/ExpertOnBugs/python-project-49.git
+   cd python-project-49
+2. Установите пакеты:
+   make build
+   make package-install
 
-### brain-prime
+# brain-even
 
-asciinema: https://asciinema.org/a/LLrqVjNyA6xVyAB3
+Описание: В этой игре вам нужно ответить является ли число чётным.
 
-### brain-prime
+Запуск: brain-even
 
-asciinema: https://asciinema.org/a/QrwQEJRktuGD9ldM
+asciinema с демонстрацией работы игры: https://asciinema.org/a/Q7k41FJum6OkNz0i
+
+# brain-calc
+
+Описание: В этой игре вам нужно посчитать результат выражения.
+
+Запуск: brain-calc
+
+asciinema с демонстрацией работы игры: https://asciinema.org/a/4M4UhkRrLoD5VHNc
+
+# brain-gcd
+
+Описание: В этой игре вам нужно найти найти НОД 2-х чисел.
+
+Запуск: brain-gcd
+
+asciinema с демонстрацией работы игры: https://asciinema.org/a/RJjVwwUPTZjGOkAq
+
+# brain-prime
+
+Описание: В этой игре вам нужно ответить является ли число простым.
+
+Запуск: brain-prime
+
+asciinema с демонстрацией работы игры: https://asciinema.org/a/LLrqVjNyA6xVyAB3
+
+# brain-progression
+
+Описание: В этой игре вам нужно найти пропущенное число в прогрессии.
+
+Запуск: brain-progression
+
+asciinema с демонстрацией работы игры: https://asciinema.org/a/QrwQEJRktuGD9ldM
