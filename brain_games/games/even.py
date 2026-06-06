@@ -1,7 +1,7 @@
 import random
-from brain_games.functions import greeting
-from brain_games.functions import is_even
-from brain_games.functions import result
+
+from brain_games.functions import greeting, is_even, result
+
 
 def even_game():
     name = greeting('What is the result of the expression?')

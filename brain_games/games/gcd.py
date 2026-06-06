@@ -1,7 +1,7 @@
 import random
-from brain_games.functions import greeting
-from brain_games.functions import gcd
-from brain_games.functions import result
+
+from brain_games.functions import gcd, greeting, result
+
 
 def gcd_game():
     name = greeting('Find the greatest common divisor of given numbers.')

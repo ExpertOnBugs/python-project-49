@@ -1,7 +1,7 @@
 import random
-from brain_games.functions import greeting
-from brain_games.functions import progression
-from brain_games.functions import result
+
+from brain_games.functions import greeting, progression, result
+
 
 def progression_game():
     name = greeting('What number is missing in the progression?')

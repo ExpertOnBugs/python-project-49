@@ -1,5 +1,7 @@
-import prompt
 import random
+
+import prompt
+
 
 def greeting(rules: str) -> str: 
     print('Welcome to the Brain Games!')
@@ -10,6 +12,7 @@ def greeting(rules: str) -> str:
     print(rules)
 
     return name
+
 
 def gcd(first_number: int, second_number: int) -> int:
     
@@ -23,6 +26,7 @@ def gcd(first_number: int, second_number: int) -> int:
     
     return first_number
 
+
 def progression() -> list:
     start = random.randint(1, 9)
     step = random.randint(1, 9)
@@ -33,6 +37,7 @@ def progression() -> list:
         progressions.append(progressions[i - 1] + step)
 
     return progressions 
+
 
 def prime(number: int) -> str:
     check = 0
@@ -45,8 +50,10 @@ def prime(number: int) -> str:
     else:
         return 'no'
     
+
 def is_even(number: int) -> bool:
     return number % 2 == 0
+
 
 def result(correct_num: int, correct_answer, answer, name: str):
     if correct_num == 3:

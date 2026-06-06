@@ -1,6 +1,7 @@
 import random
-from brain_games.functions import greeting
-from brain_games.functions import result
+
+from brain_games.functions import greeting, result
+
 
 def calc_game():
     name = greeting('What is the result of the expression?')

@@ -1,7 +1,7 @@
 import random
-from brain_games.functions import greeting
-from brain_games.functions import prime
-from brain_games.functions import result
+
+from brain_games.functions import greeting, prime, result
+
 
 def prime_game():
     name = greeting('Answer "yes" if given number is prime. Otherwise answer "no".')
