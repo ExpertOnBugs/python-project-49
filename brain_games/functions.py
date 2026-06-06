@@ -48,7 +48,7 @@ def prime(number: int) -> str:
 def is_even(number: int) -> bool:
     return number % 2 == 0
 
-def result(correct_num: int, correct_answer: str, answer: str, name: str):
+def result(correct_num: int, correct_answer, answer, name: str):
     if correct_num == 3:
         print(f'Congratulations, {name}!')
     else:
