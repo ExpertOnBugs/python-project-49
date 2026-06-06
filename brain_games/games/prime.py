@@ -4,8 +4,8 @@ from brain_games.functions import greeting, prime, result
 
 
 def prime_game():
-    name = greeting(f'Answer "yes" if given number is prime.'
-    f' Otherwise answer "no".')
+    name = greeting('Answer "yes" if given number is prime.'
+    ' Otherwise answer "no".')
 
     points = 0
 
