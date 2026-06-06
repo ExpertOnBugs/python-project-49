@@ -1,7 +1,7 @@
 import prompt
 import random
 
-def greeting(rules: str): 
+def greeting(rules: str) -> str: 
     print('Welcome to the Brain Games!')
     
     name = prompt.string('May I have your name? ')
@@ -47,3 +47,10 @@ def prime(number: int) -> str:
     
 def is_even(number: int) -> bool:
     return number % 2 == 0
+
+def result(correct_num: int, correct_answer: str, answer: str, name: str):
+    if correct_num == 3:
+        print(f'Congratulations, {name}!')
+    else:
+        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'")
+        print(f"Let's try again, {name}!")

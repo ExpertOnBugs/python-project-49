@@ -1,6 +1,7 @@
 import random
 from brain_games.functions import greeting
 from brain_games.functions import progression
+from brain_games.functions import result
 
 def progression_game():
     name = greeting('What number is missing in the progression?')
@@ -25,8 +26,4 @@ def progression_game():
         else:
             break
 
-    if correct_num == 3:
-        print(f"Congratulations, {name}!")
-    else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'")
-        print(f"Let's try again, {name}!")
+    result(correct_num, correct_answer, answer, name)

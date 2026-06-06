@@ -1,6 +1,7 @@
 import random
 from brain_games.functions import greeting
 from brain_games.functions import gcd
+from brain_games.functions import result
 
 def gcd_game():
     name = greeting('Find the greatest common divisor of given numbers.')
@@ -24,8 +25,4 @@ def gcd_game():
         else:
             break
     
-    if correct_num == 3:
-        print(f"Congratulations, {name}!")
-    else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'")
-        print(f"Let's try again, {name}!")
+    result(correct_num, correct_answer, answer, name)
