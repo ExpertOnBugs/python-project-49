@@ -6,9 +6,11 @@ from brain_games.functions import greeting, progression, result
 def progression_game():
     name = greeting('What number is missing in the progression?')
 
-    correct_num = 0
+    points = 0
 
-    while correct_num < 3:
+    ATTEMPTS = 3
+
+    while points < ATTEMPTS:
         progressions = progression()
 
         hidden = random.randint(0, 9)
@@ -22,8 +24,8 @@ def progression_game():
 
         if answer == correct_answer:
             print('Correct!')
-            correct_num += 1
+            points += 1
         else:
             break
 
-    result(correct_num, correct_answer, answer, name)
+    result(points, correct_answer, answer, name)

@@ -4,11 +4,14 @@ from brain_games.functions import greeting, prime, result
 
 
 def prime_game():
-    name = greeting('Answer "yes" if given number is prime. Otherwise answer "no".')
+    name = greeting(f'Answer "yes" if given number is prime.'
+    f' Otherwise answer "no".')
 
-    correct_num = 0
+    points = 0
 
-    while correct_num < 3:
+    ATTEMPTS = 3
+
+    while points < ATTEMPTS:
         number = random.randint(1, 151)
         
         correct_answer = prime(number)
@@ -19,8 +22,8 @@ def prime_game():
 
         if answer == correct_answer:
             print('Correct!')
-            correct_num += 1
+            points += 1
         else:
             break
 
-    result(correct_num, correct_answer, answer, name)
+    result(points, correct_answer, answer, name)

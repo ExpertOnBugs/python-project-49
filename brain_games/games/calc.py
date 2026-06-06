@@ -8,9 +8,11 @@ def calc_game():
 
     operations = {1: '+', 2: '-', 3: '*'}
     
-    correct_num = 0
+    points = 0
 
-    while correct_num < 3:
+    ATTEMPTS = 3
+
+    while points < ATTEMPTS:
         num_oper = random.randint(1, 3)
         first_num = random.randint(1, 100)
         second_num = random.randint(1, 100)
@@ -29,10 +31,10 @@ def calc_game():
 
         if correct_answer == answer:
             print('Correct!')
-            correct_num += 1
+            points += 1
         else:
             break
 
-    result(correct_num, correct_answer, answer, name)
+    result(points, correct_answer, answer, name)
 
     

@@ -8,9 +8,11 @@ def even_game():
 
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
-    correct_num = 0
+    points = 0
 
-    while correct_num < 3:
+    ATTEMPTS = 3
+
+    while points < ATTEMPTS:
         random_number = random.randint(1, 100)
 
         print('Question:', random_number)
@@ -21,8 +23,8 @@ def even_game():
 
         if answer == correct_answer:
             print('Correct!')
-            correct_num += 1
+            points += 1
         else:
             break
         
-    result(correct_num, correct_answer, answer, name)
+    result(points, correct_answer, answer, name)

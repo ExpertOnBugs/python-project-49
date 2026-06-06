@@ -55,9 +55,12 @@ def is_even(number: int) -> bool:
     return number % 2 == 0
 
 
-def result(correct_num: int, correct_answer, answer, name: str):
-    if correct_num == 3:
+def result(points: int, correct_answer, answer, name: str):
+    ATTEMPTS = 3
+
+    if points == ATTEMPTS:
         print(f'Congratulations, {name}!')
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'")
+        print((f"'{answer}' is wrong answer ;(. "
+       f"Correct answer was '{correct_answer}'"))
         print(f"Let's try again, {name}!")
