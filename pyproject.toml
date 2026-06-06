@@ -3,6 +3,9 @@ name = "hexlet-code"
 version = "0.1.0"
 description = "This is a project that consists of several simple games."
 readme = "README.md"
+authors = [
+  { name = "Dmitriy", email = "dmitriy.sam01@mail.ru" }
+]
 requires-python = ">=3.12"
 dependencies = [
     "prompt>=0.4.1",
